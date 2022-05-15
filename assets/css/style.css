@@ -26,7 +26,7 @@ html,body{
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
+	font-size: 18px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -43,3 +43,74 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*-----------------------------------------*/
+.wrapper {
+    max-width: 1710px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*
+Header classes
+*/
+.header {
+    padding: 39px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo__link {
+}
+.logo__img {
+    width: 174px;
+    height: 45px;
+}
+.navigation {
+}
+.navigation__list {
+    display: flex;
+}
+.navigation__item {
+}
+.navigation__item:not(:last-child){
+    margin:0 70px 0 0;
+}
+.navigation__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: #2C2C2C;
+    transition: all .2s ease-in;
+}
+.navigation__link:hover {
+    color:#CEFEFE;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+}
+.header__login {
+    margin:0 35px 0 0;
+}
+.login {
+    display: inline-block;
+    padding: 0 25px 0 0;
+    border-right: 1px solid #F1E0DD;
+    transition: all .2s ease-in;
+}
+.login:hover {
+    color:#CEFEFE;
+}
+.login__img {
+    margin:0 13px 0 0;
+    width: 18.64px;
+    height: 20px;
+}
+.search {
+}
+.search__img {
+    width: 20px;
+    height: 20px;
+}
+
+/*--------------------------------------------*/
