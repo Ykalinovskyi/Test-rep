@@ -86,7 +86,7 @@ Header classes
     transition: all .2s ease-in;
 }
 .navigation__link:hover {
-    color:#CEFEFE;
+    color: #FF715B;
 }
 .header__right {
     display: flex;
@@ -102,7 +102,7 @@ Header classes
     transition: all .2s ease-in;
 }
 .login:hover {
-    color:#CEFEFE;
+    color: #FF715B;
 }
 .login__img {
     margin:0 13px 0 0;
@@ -121,11 +121,151 @@ Header classes
 /*Main classes*/
 .main {
     flex: 1 1 auto;
+    padding:30px 0 0 0;
 }
+.slider {
+}
+.slider__container {
+    position:relative;
+}
+.slider__img {
+    width: 1650px;
+    height: 1000px;
+}
+.slider__description {
+    max-width: 804px;
+    width: 100%;
+    position:absolute;
+    top:285px;
+    left: 135px;
+}
+.content {
+}
+.content__title {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 112px;
+    color: #2C2C2C;
+    margin: 0 0 50px 0;
+}
+.content__btn {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+}
+.slider__bottom{
+
+}
+.slider__left {
+    width: 437px;
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.slider__arrow {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    background-color: #FF715B;
+    padding: 16px 19px;
+    margin: 0 15px 0 0;
+    transition: background .2s ease-out;
+    flex:0 0 47px;
+}
+.slider__arrow:hover {
+    border: 2px solid #F5EBE9;
+    background-color: #FFFFFF;
+    color: #FF715B;
+    padding:14px 17px;
+}
+.slider__arrow_left::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top:3px solid #FFFFFF;
+    border-left:3px solid #FFFFFF;
+    transform: rotate(-45deg);
+}
+.slider__arrow_left:hover::after {
+    border-top:3px solid #FF715B;
+    border-left:3px solid #FF715B;
+}
+.slider__arrow_right::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-bottom:3px solid #FFFFFF;
+    border-right:3px solid #FFFFFF;
+    transform: rotate(-45deg);
+}
+.slider__arrow_right:hover::after {
+    border-bottom:3px solid #FF715B;
+    border-right:3px solid #FF715B;
+}
+.slider__arrow_right {
+    padding:16px 19px 16px 16px;
+    margin: 0;
+}
+.slider__arrow_right:hover {
+    padding:14px 14px;
+}
+/*
+.slider__arrow_left {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top:3px solid #FFFFFF;
+    border-left:3px solid #FFFFFF;
+    transform: rotate(-45deg);
+}
+.slider__arrow_right {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top:3px solid #FFFFFF;
+    border-right:3px solid #FFFFFF;
+    transform: rotate(45deg);
+}
+*/
+.slider__number {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FF715B;
+    flex:0 0 328px;
+    text-align: right;
+}
+.slider__number::before {
+    content: "";
+    display: inline-block;
+    width: 234px;
+    height: 2px;
+    background: #F5EBE9;
+    margin-bottom: 8px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------*/
 
 /* Footer classes */
 .footer {
+    padding: 180px 0 0 0;
 }
 .footer__top {
     width: 1410px;
@@ -161,6 +301,10 @@ Header classes
     font-weight: 400;
     line-height: 26px;
     color: #A79997;
+    transition: all .2s ease-in;
+}
+.footer__link:hover {
+    color:#FF715B;
 }
 .footer__img {
     margin: 0 15px 0 0;
@@ -202,6 +346,10 @@ Header classes
     font-weight: 400;
     line-height: 26px;
     color: #A79997;
+    transition: all .2s ease-in;
+}
+.links__link:hover {
+    color:#FF715B;
 }
 .footer__form {
 }
@@ -216,10 +364,9 @@ Header classes
 }
 .footer__btn {
     width: 200px;
-    height: 64px;
-    background: #FF715B;
-    padding: 20px 31px;
-
+    height: 64px;  
+}
+.button {
     font-family: 'Noto Serif';
     font-style: normal;
     font-weight: 500;
@@ -227,12 +374,20 @@ Header classes
     line-height: 25px;
     text-align: center;
     color:#FFFFFF;
+
+    background: #FF715B;
+    padding: 20px 31px;
+    transition: all .2s ease-in;
+}
+.button:hover {
+    background-color: #F5EBE9;
+    color: #FF715B;
 }
 .footer__bottom {
     margin: 90px 0 0 0;
     border-top:1px solid #F5EBE9;
     text-align: center;
-    padding: 32px 0 0 0;
+    padding: 32px 0 28px 0;
 }
 .footer__copyright {
     font-family: 'PT Sans', sans-serif;
@@ -241,7 +396,6 @@ Header classes
     font-size: 18px;
     line-height: 26px;
     color: #A79997;
-    /* text-align: center; */
 }
 .footer__copyright_red {
     color:#FF715B;
