@@ -48,6 +48,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 /*
 Header classes
@@ -114,3 +117,132 @@ Header classes
 }
 
 /*--------------------------------------------*/
+
+/*Main classes*/
+.main {
+    flex: 1 1 auto;
+}
+/*--------------------------------------------*/
+
+/* Footer classes */
+.footer {
+}
+.footer__top {
+    width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__about {
+    flex: 0 0 450px;
+}
+.footer__logo {
+    width: 231px;
+    height: 60.74px;
+    margin: 0 0 26.26px 0;
+}
+.footer__subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: #A79997;
+    margin: 0 0 30px 0;
+}
+.footer__list {
+}
+.footer__item:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+
+.footer__link {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: #A79997;
+}
+.footer__img {
+    margin: 0 15px 0 0;
+}
+.phone {
+    width: 22.88px;
+    height: 22.93px;
+}
+.mail {
+    width: 22px;
+    height: 18px;
+}
+.location {
+    width: 20px;
+    height: 24px;
+}
+.footer__links {
+    padding: 20px 0 0 0;
+}
+.links {
+}
+.links__title {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+.links__list {
+}
+.links__item:not(:last-child) {
+    margin:0 0 20px 0;
+}
+.links__link {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: #A79997;
+}
+.footer__form {
+}
+.footer__input {
+    width: 400px;
+    height: 60px;
+    background: #F8F8F8;
+    border: 1px solid #F5EBE9;
+    font-size: 24px;
+    color: #A79997;
+    margin: 0 0 15px 0;
+}
+.footer__btn {
+    width: 200px;
+    height: 64px;
+    background: #FF715B;
+    padding: 20px 31px;
+
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color:#FFFFFF;
+}
+.footer__bottom {
+    margin: 90px 0 0 0;
+    border-top:1px solid #F5EBE9;
+    text-align: center;
+    padding: 32px 0 0 0;
+}
+.footer__copyright {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #A79997;
+    /* text-align: center; */
+}
+.footer__copyright_red {
+    color:#FF715B;
+}
